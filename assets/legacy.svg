@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" preserveAspectRatio="xMidYMid slice" >
+  <defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#15191a"/><stop offset="1" stop-color="#070909"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d7a562" stop-opacity=".9"/><stop offset="1" stop-color="#d7a562" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="lightpool" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#f5d6a0" stop-opacity=".58"/><stop offset=".5" stop-color="#bc8049" stop-opacity=".14"/><stop offset="1" stop-color="#b26e3e" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="railGlint" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f4d1a0" stop-opacity=".9"/><stop offset="1" stop-color="#5b4a3c" stop-opacity=".05"/>
+  </linearGradient>
+  <linearGradient id="ballast" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1a1a18"/><stop offset="1" stop-color="#070808"/>
+  </linearGradient>
+  <radialGradient id="photo-vignette" cx="50%" cy="46%" r="70%">
+    <stop offset=".38" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".72"/>
+  </radialGradient>
+  
+  <filter id="haze-soft" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="4" seed="8"/>
+    <feColorMatrix values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 .55 0"/>
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
+
+
+    <filter id="soft-figure"><feGaussianBlur stdDeviation="1.2"/></filter></defs>
+  
+    <rect width="1080" height="1350" fill="#0b0d0d"/>
+    <rect width="1080" height="780" fill="#1a1c1a"/>
+    <ellipse cx="546" cy="700" rx="530" ry="430" fill="url(#lightpool)" opacity=".76"/>
+    <path d="M0 740 H1080 V1050 H0 Z" fill="#111412"/>
+    <g opacity=".9" fill="#070808">
+      <path d="M-50 520 H310 V800 H-50 Z M760 500 H1130 V820 H760 Z"/>
+      <path d="M0 1040 H1080 V1350 H0 Z"/>
+    </g>
+    
+  <g transform="translate(352 1104) scale(-1.35 1.35) rotate(5)" fill="#050606">
+    <ellipse cx="0" cy="-117" rx="13" ry="16"/>
+    <path d="M-11-104 C-27-96-34-80-35-57 L-25-54 C-21-70-18-78-8-86 L-7-35 L-26 58 L-9 61 L2-4 L7 60 L25 58 L13-31 L11-92 C24-82 29-68 31-53 L42-55 C41-82 30-101 12-109 Z"/>
+    <path d="M-31-83 C-41-69-45-48-43-24 L-33-25 C-34-46-30-60-22-72 Z"/>
+    <path d="M12-90 C33-90 46-85 55-72 L48-63 C38-72 27-76 14-76 Z"/>
+    <path d="M47-73 C55-79 63-77 66-69 C62-64 55-62 49-65 Z"/>
+    <path d="M-8-111 C-4-124 4-124 8-111 C7-108 3-106-1-106 C-4-106-7-108-8-111 Z" opacity=".8"/>
+  </g>
+    
+  <g transform="translate(640 1100) scale(1.4 1.4) rotate(-2)" fill="#050606">
+    <ellipse cx="0" cy="-117" rx="13" ry="16"/>
+    <path d="M-11-104 C-27-96-34-80-35-57 L-25-54 C-21-70-18-78-8-86 L-7-35 L-26 58 L-9 61 L2-4 L7 60 L25 58 L13-31 L11-92 C24-82 29-68 31-53 L42-55 C41-82 30-101 12-109 Z"/>
+    <path d="M-31-83 C-41-69-45-48-43-24 L-33-25 C-34-46-30-60-22-72 Z"/>
+    <path d="M12-90 C33-90 46-85 55-72 L48-63 C38-72 27-76 14-76 Z"/>
+    <path d="M47-73 C55-79 63-77 66-69 C62-64 55-62 49-65 Z"/>
+    <path d="M-8-111 C-4-124 4-124 8-111 C7-108 3-106-1-106 C-4-106-7-108-8-111 Z" opacity=".8"/>
+  </g>
+    
+  <g transform="translate(495 992) scale(1.25) rotate(-24)" fill="none" stroke="#050606" stroke-linecap="round">
+    <path d="M0 0 L16 121" stroke-width="7"/>
+    <path d="M-13-20 L35-28" stroke-width="14"/>
+    <path d="M32-28 C45-26 49-17 39-11 L6-16" stroke-width="6"/>
+    <path d="M-18-18 L-8-22" stroke-width="5" opacity=".55"/>
+  </g>
+    <g fill="none" stroke="#9f835b" stroke-width="2" opacity=".28">
+      <path d="M0 1054 H1080 M0 1110 H1080 M0 1174 H1080"/>
+    </g>
+    <ellipse cx="812" cy="544" rx="260" ry="190" fill="url(#lightpool)" opacity=".36" filter="url(#deepblur)"/>
+    
+  <rect width="1080" height="1350" fill="url(#photo-vignette)"/>
+  <rect x="12" y="12" width="1056" height="1326" fill="none" stroke="#c7b595" stroke-width="2" opacity=".16"/>
+  
+  <filter id="grain-66" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="4" seed="66" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#grain-66)" opacity="0.2" style="mix-blend-mode:overlay"/>
+
+  
+  <radialGradient id="vignette" cx="50%" cy="44%" r="74%">
+    <stop offset="42%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)"/>
+
+
+  
+</svg>

@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070809">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="天津车辆段建段十五周年主题数字纪念册《十五载砺剑·一路向前》。">
+  <meta property="og:title" content="十五载砺剑·一路向前">
+  <meta property="og:description" content="天津车辆段建段十五周年主题数字纪念册">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/photos/23-share-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="assets/photos/23-share-cover.jpg">
+  <title>十五载砺剑·一路向前｜天津车辆段建段十五周年</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070809'/%3E%3Cpath d='M20 18h24v7H20zm0 21h24v7H20zM28 18h8v28h-8z' fill='%23c9995a'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/photos/01-hero-main.jpg">
+  <link rel="preload" as="font" href="assets/fonts/tj-display.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/tj-condensed.woff" type="font/woff" crossorigin>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#chapter-1">跳至开篇</a>
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__number">15</span>
+      <span class="preloader__line"><i></i></span>
+      <span class="preloader__label">天津车辆段 · 十五周年影像志</span>
+    </div>
+  </div>
+
+  <div class="film-chrome" id="filmChrome">
+    <div class="film-chrome__progress" aria-hidden="true"><i id="scrollProgress"></i></div>
+    <div class="film-chrome__top">
+      <button class="brand-button" id="menuButton" type="button" aria-label="打开章节目录" aria-controls="chapterMenu" aria-expanded="false">
+        <span class="brand-button__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" focusable="false"><path d="M7 8h18v3.5H7zM7 20.5h18V24H7zM14.25 8h3.5v16h-3.5z"/></svg>
+        </span>
+        <span class="brand-button__text">天津车辆段<small>十五周年 · 影像志</small></span>
+      </button>
+      <div class="film-chrome__tools">
+        <button class="icon-button" id="soundToggle" type="button" aria-label="开启环境声（合成音效）" aria-pressed="false" title="开启环境声">
+          <svg class="icon-sound-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.2-.9a5.2 5.2 0 0 1 0 7.8M18.6 5.5a9 9 0 0 1 0 13"/></svg>
+          <svg class="icon-sound-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12 1 4 4m0-4-4 4"/></svg>
+        </button>
+        <button class="icon-button" id="shareButton" type="button" aria-label="分享本作品" title="分享">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0-12 4.5 4.5M12 3 7.5 7.5M5 12v7h14v-7"/></svg>
+        </button>
+        <button class="icon-button icon-button--menu" id="menuButtonCompact" type="button" aria-label="章节目录">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="chapter-indicator" aria-hidden="true">
+      <span class="chapter-indicator__current" id="chapterCurrent">01</span>
+      <span class="chapter-indicator__line"><i id="chapterFill"></i></span>
+      <span class="chapter-indicator__total">09</span>
+    </div>
+  </div>
+
+  <div class="chapter-menu" id="chapterMenu" role="dialog" aria-modal="true" aria-labelledby="chapterMenuTitle" hidden>
+    <div class="chapter-menu__scrim" data-close-menu></div>
+    <div class="chapter-menu__panel">
+      <div class="chapter-menu__head">
+        <div>
+          <p class="micro-label">CHAPTER INDEX</p>
+          <h2 id="chapterMenuTitle">九幕影像志</h2>
+        </div>
+        <button class="round-close" type="button" aria-label="关闭章节目录" data-close-menu>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <nav class="chapter-menu__nav" aria-label="章节导航">
+        <a href="#chapter-1"><span>01</span><strong>序章</strong><small>十五年，向前！</small></a>
+        <a href="#chapter-2"><span>02</span><strong>回眸</strong><small>岁月留下的足迹</small></a>
+        <a href="#chapter-3"><span>03</span><strong>发展</strong><small>十五年的奋进答卷</small></a>
+        <a href="#chapter-4"><span>04</span><strong>一线</strong><small>平凡岗位，不凡坚守</small></a>
+        <a href="#chapter-5"><span>05</span><strong>传承</strong><small>师徒之间，薪火相传</small></a>
+        <a href="#chapter-6"><span>06</span><strong>担当</strong><small>关键时刻，冲锋在前</small></a>
+        <a href="#chapter-7"><span>07</span><strong>展望</strong><small>下一程，继续出发</small></a>
+        <a href="#chapter-8"><span>08</span><strong>致敬</strong><small>致敬每一位奋斗者</small></a>
+        <a href="#chapter-9"><span>09</span><strong>寄语</strong><small>十五年，我们共同走过</small></a>
+      </nav>
+      <p class="chapter-menu__note">建议开启声音，获得更完整的观影体验。</p>
+    </div>
+  </div>
+
+  <main id="film" class="film">
+    <!-- 01 / 序章 -->
+    <section class="chapter hero" id="chapter-1" data-chapter="1" data-chapter-name="序章" aria-labelledby="heroTitle">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__background" src="assets/photos/01-hero-main.jpg" alt="" width="1280" height="800">
+        <div class="hero__fog hero__fog--one"></div>
+        <div class="hero__fog hero__fog--two"></div>
+        <div class="hero__scrim"></div>
+        <div class="hero__grain"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__edition"><span></span>TIANJIN VEHICLE DEPOT · 15TH ANNIVERSARY</p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="hero__title-line" data-split>十五载砺剑</span>
+          <span class="hero__title-line hero__title-line--gold" data-split>一路向前</span>
+        </h1>
+        <div class="hero__anniversary" aria-hidden="true">
+          <span></span><b>15</b><span></span>
+        </div>
+        <p class="hero__subtitle">天津车辆段建段十五周年主题数字纪念册</p>
+        <p class="hero__lead">从一列列货车的安全启程<br>到一个个普通岗位上的默默坚守</p>
+      </div>
+      <div class="hero__footer">
+        <span class="scene-note">场景示意 · 非真实历史影像</span>
+        <button class="scroll-cue" id="heroNext" type="button" aria-label="向上滑动进入下一幕">
+          <span>向上滑动</span><i aria-hidden="true"></i>
+        </button>
+        <span class="hero__index">01 <i>/</i> 09</span>
+      </div>
+    </section>
+
+    <!-- 02 / 回眸 -->
+    <section class="chapter memory" id="chapter-2" data-chapter="2" data-chapter-name="回眸" aria-labelledby="memoryTitle">
+      <div class="chapter-shell">
+        <header class="chapter-head reveal">
+          <div class="chapter-head__meta"><span>第一回</span><span>MEMORY</span></div>
+          <h2 id="memoryTitle">十五年，<br><em>岁月留下的足迹</em></h2>
+          <p class="chapter-head__lead">十五年，足以让一条道路不断延伸。<br>十五年，也足以见证一座车辆段的成长与蜕变。</p>
+        </header>
+
+        <aside class="verification-note reveal" aria-label="资料说明">
+          <span class="verification-note__mark">!</span>
+          <p><strong>史实资料待核验</strong>本页年份、事件与影像均为演示占位。正式发布前须由天津车辆段审核替换，不以虚构内容冒充真实历史。</p>
+        </aside>
+
+        <div class="timeline" id="timelineList" aria-label="天津车辆段发展时间轴"></div>
+
+        <div class="chapter-endmark reveal">
+          <span></span><p>时间轴继续向前<br>而每一步，都由认真写下</p><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / 发展 -->
+    <section class="chapter development" id="chapter-3" data-chapter="3" data-chapter-name="发展" aria-labelledby="developmentTitle">
+      <div class="chapter-shell chapter-shell--wide">
+        <header class="chapter-head chapter-head--split reveal">
+          <div>
+            <div class="chapter-head__meta"><span>第二回</span><span>PROGRESS</span></div>
+            <h2 id="developmentTitle">十五年的<br><em>奋进答卷</em></h2>
+          </div>
+          <div class="development__number" aria-hidden="true"><span>15</span><small>YEARS</small></div>
+        </header>
+        <p class="development__intro reveal">从安全底线到运输保障，从检修能力到技术创新，再到管理提升——五个维度，共同拼出一座车辆段向前生长的轨迹。</p>
+        <div class="dev-tabs reveal" role="tablist" aria-label="发展成果五个板块" id="devTabs"></div>
+        <div class="dev-stage reveal" id="devStage" aria-live="polite"></div>
+        <p class="data-disclaimer reveal"><span aria-hidden="true">※</span> 本板块为内容框架演示。所有成果与数据须由段内业务部门核实后补充，不展示未经确认的数字。</p>
+      </div>
+    </section>
+
+    <!-- 04 / 一线 -->
+    <section class="chapter frontline" id="chapter-4" data-chapter="4" data-chapter-name="一线" aria-labelledby="frontlineTitle">
+      <div class="chapter-shell chapter-shell--wide">
+        <header class="chapter-head reveal">
+          <div class="chapter-head__meta"><span>第三回</span><span>FRONTLINE</span></div>
+          <h2 id="frontlineTitle">平凡岗位，<br><em>不凡坚守</em></h2>
+        </header>
+        <p class="frontline__lead reveal">一列货车的安全运行，离不开每一个岗位的认真检查。<br>在车辆段，有这样一群人：他们手持点检锤，穿梭在一列列货车之间，用一次次检查排查故障隐患，用日复一日的坚守守护运输安全。</p>
+
+        <div class="frontline-scene reveal" id="frontlineScene">
+          <img src="assets/photos/12-frontline-inspection.jpg" alt="货车轮对检修现场场景示意" width="1600" height="1200">
+          <div class="frontline-scene__wash" aria-hidden="true"></div>
+          <div class="hotspot-layer" id="hotspotLayer"></div>
+          <span class="scene-label">场景示意 · 非真实历史影像</span>
+          <button class="expand-button" type="button" data-lightbox="assets/photos/12-frontline-inspection.jpg" data-lightbox-caption="一线检查场景示意 · 请替换为天津车辆段真实工作照片" aria-label="查看场景大图">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+          </button>
+        </div>
+        <p class="hotspot-hint reveal">轻触画面中的 <b>检车锤</b>、<b>轮对</b> 与 <b>作业身影</b>，查看岗位细节</p>
+
+        <blockquote class="frontline-quote reveal">
+          <p>一锤一检，敲响的是责任。<br>一车一查，守护的是安全。</p>
+          <footer>平凡的岗位，因为认真而不平凡。</footer>
+        </blockquote>
+
+        <div class="detail-chips reveal" aria-label="岗位细节快捷入口" id="detailChips"></div>
+      </div>
+    </section>
+
+    <!-- 05 / 传承 -->
+    <section class="chapter legacy" id="chapter-5" data-chapter="5" data-chapter-name="传承" aria-labelledby="legacyTitle">
+      <div class="chapter-shell chapter-shell--wide">
+        <header class="chapter-head chapter-head--split reveal">
+          <div>
+            <div class="chapter-head__meta"><span>第四回</span><span>LEGACY</span></div>
+            <h2 id="legacyTitle">师徒之间，<br><em>薪火相传</em></h2>
+          </div>
+          <p class="legacy__intro">技术需要传承，责任需要延续。<br>一代人有一代人的坚守，一名师傅有一名师傅的担当。</p>
+        </header>
+
+        <div class="compare reveal" id="compare">
+          <div class="compare__pane compare__pane--before">
+            <img src="assets/photos/16-legacy-compare.jpg" alt="铁路现场场景示意，冷色调版本" width="1300" height="1700">
+            <span class="compare__badge compare__badge--left">初入岗位 · 示意</span>
+          </div>
+          <div class="compare__pane compare__pane--after" id="compareAfter">
+            <img src="assets/photos/16-legacy-compare.jpg" alt="铁路现场场景示意，暖色调版本" width="1300" height="1700">
+            <span class="compare__badge compare__badge--right">独当一面 · 示意</span>
+          </div>
+          <div class="compare__divider" id="compareDivider" aria-hidden="true"><span><i></i><i></i></span></div>
+          <input class="compare__range" id="compareRange" type="range" min="0" max="100" value="52" aria-label="拖动查看成长前后对比">
+          <span class="scene-label scene-label--compare">场景示意 · 非真实历史影像</span>
+        </div>
+
+        <div class="legacy__growth reveal" aria-label="职工成长路径示意">
+          <div class="growth-step"><span>01</span><strong>入门</strong><small>认识车辆，学会敬畏标准</small></div>
+          <div class="growth-step"><span>02</span><strong>上手</strong><small>反复练习，把动作做扎实</small></div>
+          <div class="growth-step"><span>03</span><strong>独立</strong><small>独当一面，把责任扛起来</small></div>
+          <div class="growth-step"><span>04</span><strong>带头</strong><small>带好新人，让经验继续生长</small></div>
+        </div>
+
+        <button class="story-card reveal" type="button" data-sheet-kind="legacy">
+          <span class="story-card__index">STORY / 01</span>
+          <span class="story-card__body">
+            <strong>一把检车锤，两代人的约定</strong>
+            <small>【请补充真实师徒姓名、岗位与传承故事】</small>
+          </span>
+          <span class="story-card__more" aria-hidden="true">阅读<br>故事</span>
+        </button>
+
+        <blockquote class="legacy-quote reveal">
+          <p>师傅传授的不只是技术，更是责任。<br>徒弟接过的不只是一把检车锤，更是一份沉甸甸的担当。</p>
+          <footer>铁路精神，就在这样的言传身教中不断延续。</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 06 / 担当 -->
+    <section class="chapter duty" id="chapter-6" data-chapter="6" data-chapter-name="担当" aria-labelledby="dutyTitle">
+      <div class="chapter-shell chapter-shell--wide">
+        <header class="chapter-head reveal">
+          <div class="chapter-head__meta"><span>第五回</span><span>RESPONSIBILITY</span></div>
+          <h2 id="dutyTitle">关键时刻，<br><em>冲锋在前</em></h2>
+        </header>
+        <div class="duty__header reveal">
+          <p>越是任务艰巨，越能看见责任。<br>越是关键时刻，越能彰显担当。</p>
+          <div class="carousel-controls" aria-label="主题场景切换">
+            <button class="round-control" id="dutyPrev" type="button" aria-label="上一个主题">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+            </button>
+            <button class="round-control" id="dutyNext" type="button" aria-label="下一个主题">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="duty-carousel" id="dutyCards" aria-label="暑运保障、防洪工作、集中修主题场景"></div>
+        <p class="swipe-hint reveal"><span></span>横向滑动 · 点击进入专题</p>
+        <p class="data-disclaimer reveal"><span aria-hidden="true">※</span> 本板块场景为示意画面；具体任务、人物与成果请以段内审核材料为准。</p>
+      </div>
+    </section>
+
+    <!-- 07 / 展望 -->
+    <section class="chapter future" id="chapter-7" data-chapter="7" data-chapter-name="展望" aria-labelledby="futureTitle">
+      <div class="future__media" aria-hidden="true">
+        <img src="assets/photos/20-future-dawn.jpg" alt="" width="1920" height="1200" data-parallax="0.08">
+        <div class="future__dawn" id="futureDawn"></div>
+        <div class="future__scrim"></div>
+      </div>
+      <div class="chapter-shell chapter-shell--wide future__content">
+        <header class="chapter-head reveal">
+          <div class="chapter-head__meta"><span>第六回</span><span>HORIZON</span></div>
+          <h2 id="futureTitle">下一程，<br><em>继续出发</em></h2>
+        </header>
+        <p class="future__lead reveal">十五年，是奋斗的见证。<br>也是新的起点。</p>
+        <ol class="future__directions" aria-label="六个未来方向">
+          <li class="reveal"><span>01</span><p>坚守安全底线，筑牢安全生产防线。</p></li>
+          <li class="reveal"><span>02</span><p>立足检修岗位，持续提高车辆检修质量。</p></li>
+          <li class="reveal"><span>03</span><p>坚持创新驱动，提升技术和设备保障能力。</p></li>
+          <li class="reveal"><span>04</span><p>加强人才培养，建设高素质职工队伍。</p></li>
+          <li class="reveal"><span>05</span><p>深化班组建设，凝聚团队发展合力。</p></li>
+          <li class="reveal"><span>06</span><p>立足岗位实际，以实干推动天津车辆段高质量发展。</p></li>
+        </ol>
+        <p class="future__statement reveal">十五载砥砺奋进<br><em>下一程再启新篇</em></p>
+        <span class="scene-note scene-note--light">场景示意 · 非真实历史影像</span>
+      </div>
+    </section>
+
+    <!-- 08 / 致敬 -->
+    <section class="chapter tribute" id="chapter-8" data-chapter="8" data-chapter-name="致敬" aria-labelledby="tributeTitle">
+      <div class="tribute__media" aria-hidden="true">
+        <img src="assets/photos/21-tribute-group.jpg" alt="" width="1600" height="1000">
+        <div class="tribute__scrim"></div>
+      </div>
+      <div class="tribute__content">
+        <p class="micro-label reveal">TO EVERY STRIVER</p>
+        <h2 id="tributeTitle" class="reveal">十五载同心同行<br><em>新征程再创辉煌</em></h2>
+        <div class="tribute__rule reveal"><span></span><i>15</i><span></span></div>
+        <p class="tribute__dedication reveal">致敬每一位坚守岗位的天津车辆人！<br>致敬每一位为铁路事业默默奉献的奋斗者！</p>
+        <p class="tribute__signature reveal">天津车辆段建段十五周年</p>
+        <span class="scene-note scene-note--light">致敬画面示意 · 请替换为真实职工集体合影</span>
+      </div>
+    </section>
+
+    <!-- 09 / 寄语 -->
+    <section class="chapter letter" id="chapter-9" data-chapter="9" data-chapter-name="寄语" aria-labelledby="letterTitle">
+      <div class="chapter-shell">
+        <header class="chapter-head reveal">
+          <div class="chapter-head__meta"><span>终章</span><span>MESSAGE</span></div>
+          <h2 id="letterTitle">十五年，<br><em>我们共同走过</em></h2>
+          <p class="chapter-head__lead">下一程，让我们继续同行。</p>
+        </header>
+
+        <form class="message-form reveal" id="messageForm" novalidate>
+          <div class="message-form__top">
+            <label for="messageInput">「我想对天津车辆段说……」</label>
+            <span><b id="messageCount">0</b> / 120</span>
+          </div>
+          <textarea id="messageInput" name="message" maxlength="120" rows="5" placeholder="写下你的十五周年祝福，或一句岗位感言……" aria-describedby="messagePrivacy"></textarea>
+          <p class="message-form__status" id="messageStatus" aria-live="polite"></p>
+          <p class="message-form__privacy" id="messagePrivacy"><span aria-hidden="true">●</span> 当前版本未连接后端。寄语只保存在本机，不会上传、不会公开展示。</p>
+          <div class="message-form__actions">
+            <button class="primary-button" id="saveMessage" type="submit">保存到本机</button>
+            <button class="secondary-button" id="copyMessage" type="button">复制寄语</button>
+          </div>
+        </form>
+
+        <div class="final-actions reveal">
+          <button class="final-action" id="finalShare" type="button">
+            <span>分享这份纪念</span>
+            <small>让更多同行者一起看见</small>
+          </button>
+          <button class="final-action" id="replayButton" type="button">
+            <span>再次回顾</span>
+            <small>返回开篇，重温九幕影像</small>
+          </button>
+        </div>
+
+        <details class="audit-note reveal">
+          <summary>内容真实性校核说明 <span>展开查看</span></summary>
+          <div class="audit-note__body">
+            <p>本作品为完整可运行的视觉与交互演示版。以下内容仍需天津车辆段审核后替换：</p>
+            <ul>
+              <li>建段年份、重大历史节点与发展沿革</li>
+              <li>运输、检修、安全生产等统计数据</li>
+              <li>技术创新成果、荣誉与重要工作成果</li>
+              <li>职工姓名、人物事迹、师徒故事</li>
+              <li>所有真实历史照片、现场照片及影像版权</li>
+            </ul>
+            <p>当前页面中的工业场景均为版式示意，不作为天津车辆段真实历史资料使用。</p>
+          </div>
+        </details>
+
+        <details class="audit-note reveal">
+          <summary>影像来源与版权说明 <span>展开查看</span></summary>
+          <div class="audit-note__body">
+            <p>当前示意影像来自 Wikimedia Commons，经裁切、调色与压缩，衍生影像依原许可使用。画面中的地点、人物与设备均不代表天津车辆段。</p>
+            <ul>
+              <li>MNXANL：货运列车、货场及铁路线路影像</li>
+              <li>Windmemories：罐车货运列车影像</li>
+              <li>JoachimKohler-HB：轮对检修与存放场景影像</li>
+              <li>Dietmar Rabich：铁路线路与晨雾场景影像</li>
+              <li>NFarras：轮对检修场景影像</li>
+            </ul>
+            <p>许可：<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>。正式发布时，请以天津车辆段授权实拍替换，并同步更新本条说明。</p>
+          </div>
+        </details>
+
+        <footer class="site-footer reveal">
+          <p>十五载砺剑 · 一路向前</p>
+          <small>天津车辆段建段十五周年主题数字纪念册</small>
+          <span>INTERNAL COMMEMORATIVE EDITION · 09 CHAPTERS</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="sheet" id="detailSheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+    <div class="sheet__scrim" data-close-sheet></div>
+    <div class="sheet__panel">
+      <div class="sheet__handle" aria-hidden="true"></div>
+      <button class="round-close sheet__close" type="button" aria-label="关闭详情" data-close-sheet>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <div id="sheetContent"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption" hidden>
+    <button class="lightbox__scrim" type="button" aria-label="关闭大图" data-close-lightbox></button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+      <button class="round-close lightbox__close" type="button" aria-label="关闭大图" data-close-lightbox>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </figure>
+  </div>
+
+  <div class="share-dialog" id="shareDialog" role="dialog" aria-modal="true" aria-labelledby="shareTitle" hidden>
+    <div class="share-dialog__scrim" data-close-share></div>
+    <div class="share-dialog__panel">
+      <div class="share-dialog__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M7 8h18v3.5H7zM7 20.5h18V24H7zM14.25 8h3.5v16h-3.5z"/></svg>
+      </div>
+      <p class="micro-label">SHARE THE MEMORY</p>
+      <h2 id="shareTitle">分享这份十五周年纪念</h2>
+      <p class="share-dialog__hint" id="shareHint">复制链接，发给并肩奋斗的同事。</p>
+      <div class="share-dialog__actions">
+        <button class="primary-button" id="copyLink" type="button">复制链接</button>
+        <button class="secondary-button" type="button" data-close-share>稍后分享</button>
+      </div>
+      <p class="share-dialog__wechat" id="wechatTip" hidden>在微信内，也可点击右上角「···」分享给朋友或收藏。</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><div class="noscript">请开启 JavaScript，以浏览完整互动影像。</div></noscript>
+</body>
+</html>

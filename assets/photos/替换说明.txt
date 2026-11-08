@@ -1,0 +1,44 @@
+天津车辆段建段十五周年 H5 · 图片更换说明
+============================================
+
+推荐方式（可直接在网页里操作）
+1. 在 macOS 上双击项目根目录的“打开素材替换台.command”。
+   也可以在项目目录运行 npm start 后，打开 http://127.0.0.1:4173/素材替换台.html
+2. 浏览器会自动打开素材替换台。
+3. 在对应画面卡片上点“更换此图”，选择自己的照片。
+4. 替换完成后点右上角“打开 H5”检查；必要时按 ⌘⇧R（Mac）或 Ctrl+F5（Windows）强制刷新。
+
+备用方式（同名覆盖）
+把新照片改成本说明下方列出的同名文件，直接覆盖本文件夹里的原文件。
+只支持 JPG；不要改动两位编号、英文名或 .jpg 扩展名。覆盖后强制刷新 H5。
+
+建议尺寸与用途
+01-hero-main.jpg                 首屏全屏主画面；建议 1440×2560，竖屏优先
+02-timeline-origin.jpg           时间轴第 1 个节点；建议 1600×1100
+03-timeline-foundation.jpg       时间轴第 2 个节点；建议 1600×1100
+04-timeline-growth.jpg           时间轴第 3 个节点；建议 1600×1100
+05-timeline-safety.jpg           时间轴第 4 个节点；建议 1600×1100
+06-timeline-today.jpg            时间轴第 5 个节点；建议 1600×1100
+07-development-safety.jpg        发展 · 安全生产；建议 1600×1000
+08-development-transport.jpg     发展 · 运输保障；建议 1600×1000
+09-development-repair.jpg        发展 · 检修能力；建议 1600×1000
+10-development-innovation.jpg    发展 · 技术创新；建议 1600×1000
+11-development-team.jpg          发展 · 管理提升；建议 1600×1000
+12-frontline-inspection.jpg      一线检查主画面；建议 1600×1200
+13-hotspot-hammer.jpg            一线热点 · 检车锤；建议 1200×900
+14-hotspot-wheel.jpg             一线热点 · 轮对；建议 1200×900
+15-hotspot-worker.jpg            一线热点 · 职工；建议 1200×900
+16-legacy-compare.jpg            师徒成长对比；建议 1300×1700 竖图
+17-duty-summer.jpg               担当 · 暑运保障；建议 1100×1400 竖图
+18-duty-flood.jpg                担当 · 防洪工作；建议 1100×1400 竖图
+19-duty-maintenance.jpg          担当 · 集中修；建议 1100×1400 竖图
+20-future-dawn.jpg               展望 · 晨光；建议 1920×1200
+21-tribute-group.jpg             尾声 · 职工合影；建议 1600×1000
+22-message-background.jpg        寄语页背景；建议 1600×1000
+23-share-cover.jpg               微信分享封面；建议 1200×630
+
+说明
+- 通过替换台上传时，JPG、PNG、WebP 均可；浏览器会自动转为 JPEG，长边最大 3200 像素。
+- 每次上传前，原图会自动备份到本文件夹的 _backup/ 子目录。
+- 替换台只允许在运行服务的电脑（127.0.0.1）上写入，局域网手机只能预览 H5。
+- 正式发布前请确认照片版权、人物肖像授权，并删除页面中的“场景示意”提示。

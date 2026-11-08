@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" preserveAspectRatio="xMidYMid slice" >
+  <defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#15191a"/><stop offset="1" stop-color="#070909"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#c6905b" stop-opacity=".9"/><stop offset="1" stop-color="#c6905b" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="lightpool" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#f5d6a0" stop-opacity=".58"/><stop offset=".5" stop-color="#bc8049" stop-opacity=".14"/><stop offset="1" stop-color="#b26e3e" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="railGlint" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f4d1a0" stop-opacity=".9"/><stop offset="1" stop-color="#5b4a3c" stop-opacity=".05"/>
+  </linearGradient>
+  <linearGradient id="ballast" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1a1a18"/><stop offset="1" stop-color="#070808"/>
+  </linearGradient>
+  <radialGradient id="photo-vignette" cx="50%" cy="46%" r="70%">
+    <stop offset=".38" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".72"/>
+  </radialGradient>
+  
+  <filter id="haze-soft" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="4" seed="8"/>
+    <feColorMatrix values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 .55 0"/>
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
+
+</defs>
+  
+    <rect width="1080" height="1350" fill="#080a0a"/>
+    <ellipse cx="700" cy="675" rx="500" ry="440" fill="url(#lightpool)" opacity=".8"/>
+    <g transform="translate(0 -70)">
+      
+  <g transform="translate(735 744) scale(2.24)">
+    <circle cx="0" cy="0" r="142" fill="#080a0a" stroke="#16191a" stroke-width="19"/>
+    <circle cx="0" cy="0" r="119" fill="none" stroke="#c5a06b" stroke-width="3" opacity=".44"/>
+    <circle cx="0" cy="0" r="98" fill="#111416" stroke="#24282a" stroke-width="9"/>
+    <circle cx="0" cy="0" r="73" fill="#080a0a" stroke="#c5a06b" stroke-width="2" opacity=".8"/>
+    <circle cx="0" cy="0" r="19" fill="#1d2224" stroke="#c5a06b" stroke-width="2" opacity=".6"/>
+    <path d="M-17 0 H17 M0-17 V17" stroke="#2e3436" stroke-width="17"/>
+    <circle cx="0" cy="0" r="7" fill="#070809"/>
+    <g opacity=".35" stroke="#a7a7a2" stroke-width="1">
+      <path d="M-52-65 C-22-89 18-95 53-78"/>
+      <path d="M-73-34 C-34-88 36-103 84-68"/>
+      <path d="M-89 18 C-35-76 52-101 103-49"/>
+    </g>
+  </g>
+    </g>
+    <g fill="#070808">
+      <rect x="0" y="1030" width="1080" height="320"/>
+      <path d="M0 330 C320 180 832 214 1080 420 V580 C712 448 364 456 0 620 Z"/>
+      <path d="M0 790 C350 706 766 748 1080 884 V1040 C760 916 390 872 0 958 Z"/>
+    </g>
+    <g fill="none" stroke="#8a7353" stroke-width="7" opacity=".42">
+      <path d="M75 672 C238 706 330 780 386 916"/>
+      <path d="M1030 640 C880 714 820 805 792 944"/>
+      <path d="M22 833 C300 784 478 801 624 860"/>
+    </g>
+    <g fill="none" stroke="#b49a70" stroke-width="2" opacity=".25">
+      <path d="M79 670 C241 705 333 779 389 915"/>
+      <path d="M1026 638 C878 712 817 804 789 943"/>
+    </g>
+    <path d="M0 1120 C278 1068 502 1118 690 1170 C826 1208 943 1198 1080 1160 V1350 H0 Z" fill="#0c0f0e"/>
+    
+  <rect width="1080" height="1350" fill="url(#photo-vignette)"/>
+  <rect x="12" y="12" width="1056" height="1326" fill="none" stroke="#c7b595" stroke-width="2" opacity=".16"/>
+  
+  <filter id="grain-44" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="4" seed="44" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#grain-44)" opacity="0.2" style="mix-blend-mode:overlay"/>
+
+  
+  <radialGradient id="vignette" cx="50%" cy="44%" r="74%">
+    <stop offset="42%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)"/>
+
+
+  
+</svg>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#08090a">
+  <title>在线发布控制台｜天津车辆段建段十五周年 H5</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="studio.css">
+</head>
+<body class="studio">
+  <header class="studio-bar">
+    <a class="studio-brand" href="index.html">
+      <i><span>15</span></i>
+      <span class="studio-brand__copy">
+        <strong>天津车辆段十五周年</strong>
+        <small>在线发布控制台</small>
+      </span>
+    </a>
+    <div class="studio-bar__actions">
+      <a class="studio-button studio-button--ghost" id="publicLink" href="index.html" target="_blank" rel="noopener">打开公开页</a>
+      <a class="studio-button studio-button--ghost" id="deployLink" href="#" target="_blank" rel="noopener" hidden>查看部署</a>
+      <a class="studio-button studio-button--ghost" href="#settings">仓库设置</a>
+    </div>
+  </header>
+
+  <main class="studio-main">
+    <section class="studio-intro">
+      <p class="studio-eyebrow">PUBLISH CONTROL · 23 IMAGE SLOTS</p>
+      <h1>换一张图，<br><em>公开网址同步更新。</em></h1>
+      <p>公开页面只读，任何人都能访问。你在本页选择照片后，图片会提交到 GitHub 仓库，托管平台自动重新发布；网址不变，内容更新。文字与数据仍由项目维护者按审核稿更新。</p>
+    </section>
+
+    <section class="studio-panel" id="settings" aria-labelledby="settingsTitle">
+      <div class="studio-panel__head">
+        <div>
+          <p class="studio-eyebrow">GITHUB PUBLISHING</p>
+          <h2 id="settingsTitle">连接发布仓库</h2>
+        </div>
+        <span class="studio-pill" id="connectionPill">未连接</span>
+      </div>
+      <p class="studio-panel__intro">仓库建议设为 Public，并使用 GitHub Pages、Netlify 或 Vercel 从该仓库自动部署。Token 只保存在当前浏览器，不会写入网页或仓库。</p>
+
+      <form class="studio-form" id="configForm" autocomplete="off">
+        <label>仓库所有者
+          <input name="owner" type="text" placeholder="例如 tianjin-vehicle" spellcheck="false" autocapitalize="off">
+        </label>
+        <label>仓库名称
+          <input name="repo" type="text" placeholder="例如 tj15" spellcheck="false" autocapitalize="off">
+        </label>
+        <label>分支
+          <input name="branch" type="text" value="main" spellcheck="false" autocapitalize="off">
+        </label>
+        <label class="studio-form__wide">公开网址
+          <input name="publicUrl" type="url" placeholder="部署后自动显示，例如 https://name.github.io/tj15/" spellcheck="false">
+        </label>
+        <label class="studio-form__wide">GitHub Token
+          <input name="token" type="password" placeholder="粘贴 github_pat_...（已保存时可留空）" autocomplete="new-password" spellcheck="false">
+        </label>
+        <label class="studio-form__check studio-form__wide">
+          <input name="remember" type="checkbox">
+          <span>在此浏览器记住 Token。仅在私人电脑启用，公用电脑请保持关闭。</span>
+        </label>
+        <div class="studio-form__actions studio-form__wide">
+          <button class="studio-button studio-button--primary" type="submit">连接并验证</button>
+          <button class="studio-button studio-button--ghost" id="disconnect" type="button">断开</button>
+        </div>
+      </form>
+      <p class="studio-status" id="configStatus" role="status" aria-live="polite">等待连接。</p>
+
+      <details class="studio-help">
+        <summary>首次部署：如何取得 Token 并开启自动发布</summary>
+        <ol>
+          <li>把项目放入一个 GitHub 仓库，分支默认为 <code>main</code>。</li>
+          <li>在 GitHub 的 <strong>Settings → Developer settings → Personal access tokens → Fine-grained tokens</strong> 新建 Token，只授权目标仓库，权限选择 <strong>Contents: Read and write</strong>。</li>
+          <li>在仓库 <strong>Settings → Pages → Build and deployment</strong> 中选择 <strong>GitHub Actions</strong>。</li>
+          <li>填好上方仓库信息并连接。每次替换图片都会生成一次提交，自动部署完成后同一公开网址即可看到新图。</li>
+          <li>Token 仅用于本页面提交图片，使用后可随时在 GitHub 撤销。</li>
+        </ol>
+      </details>
+    </section>
+
+    <div class="studio-toolbar">
+      <div class="studio-filters" id="filters" aria-label="按章节筛选"></div>
+      <span class="studio-count" id="count">共 23 张图片</span>
+    </div>
+
+    <p class="studio-hint" id="publishHint">连接仓库后可上传图片。提交后，GitHub Pages 通常需要 30–90 秒完成发布。</p>
+
+    <section class="studio-grid" id="grid" aria-label="在线图片发布清单"></section>
+
+    <footer class="studio-footer">
+      <p>公开页不包含本机写入接口。在线发布控制台仅供项目维护者使用，Token 请妥善保管。</p>
+      <p>正式发布前请确认影像版权、人物肖像授权与内容真实性。</p>
+    </footer>
+  </main>
+
+  <div class="studio-toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/photos/image-slots.js"></script>
+  <script src="studio.js"></script>
+</body>
+</html>

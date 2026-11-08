@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" preserveAspectRatio="xMidYMid slice" >
+  <defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#15191a"/><stop offset="1" stop-color="#070909"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#bcc4c1" stop-opacity=".9"/><stop offset="1" stop-color="#bcc4c1" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="lightpool" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#f5d6a0" stop-opacity=".58"/><stop offset=".5" stop-color="#bc8049" stop-opacity=".14"/><stop offset="1" stop-color="#b26e3e" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="railGlint" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f4d1a0" stop-opacity=".9"/><stop offset="1" stop-color="#5b4a3c" stop-opacity=".05"/>
+  </linearGradient>
+  <linearGradient id="ballast" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1a1a18"/><stop offset="1" stop-color="#070808"/>
+  </linearGradient>
+  <radialGradient id="photo-vignette" cx="50%" cy="46%" r="70%">
+    <stop offset=".38" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".72"/>
+  </radialGradient>
+  
+  <filter id="haze-soft" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="4" seed="8"/>
+    <feColorMatrix values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 .55 0"/>
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
+
+
+    <radialGradient id="flash" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff2cc" stop-opacity=".9"/><stop offset=".24" stop-color="#d9d4bb" stop-opacity=".3"/><stop offset="1" stop-color="#bfc1b3" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="rain" width="92" height="170" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L35 170 M22 20 L-15 190 M55 74 L18 244" stroke="#d8ddd9" stroke-width="2" opacity=".22"/>
+    </pattern></defs>
+  
+    <rect width="1080" height="1350" fill="#12191a"/>
+    <rect width="1080" height="760" fill="#293536"/>
+    <ellipse cx="784" cy="510" rx="520" ry="320" fill="url(#flash)" opacity=".46"/>
+    <g opacity=".74">
+      
+  <g transform="translate(214 802) scale(1.02)" stroke="#070a0a" fill="none">
+    <path d="M0 0 V-530" stroke-width="7"/>
+    <path d="M-52-505 H66" stroke-width="5"/>
+    <path d="M-42-500 L-18-530 M52-500 L29-530" stroke-width="3" opacity=".8"/>
+    <path d="M-57-477 C-185-420-350-375-520-346" stroke-width="2" opacity=".55"/>
+    <path d="M66-477 C198-424 367-382 548-351" stroke-width="2" opacity=".55"/>
+    <path d="M-28-20 H31" stroke-width="12"/>
+  </g>
+      
+  <g transform="translate(915 805) scale(0.96)" stroke="#070a0a" fill="none">
+    <path d="M0 0 V-530" stroke-width="7"/>
+    <path d="M-52-505 H66" stroke-width="5"/>
+    <path d="M-42-500 L-18-530 M52-500 L29-530" stroke-width="3" opacity=".8"/>
+    <path d="M-57-477 C-185-420-350-375-520-346" stroke-width="2" opacity=".55"/>
+    <path d="M66-477 C198-424 367-382 548-351" stroke-width="2" opacity=".55"/>
+    <path d="M-28-20 H31" stroke-width="12"/>
+  </g>
+    </g>
+    <g opacity=".82">
+      
+  <g transform="translate(337 831) scale(0.93 0.93)">
+    <path d="M-242-158 L238-158 L258-142 L258 4 L-258 4 L-258-142 Z" fill="#0a0e0e"/>
+    <path d="M-238-156 L236-156" stroke="#79908c" stroke-width="4" opacity=".52"/>
+    <path d="M-220-143 L-220-12 M-170-145 L-170-10 M-118-145 L-118-10 M-64-145 L-64-10 M-10-145 L-10-10 M44-145 L44-10 M98-145 L98-10 M152-145 L152-10 M206-145 L206-10" stroke="#29221e" stroke-width="6" opacity=".68"/>
+    <path d="M-238-128 L238-128 M-247-118 L247-118 M-249-49 L249-49" stroke="#3c2a20" stroke-width="3" opacity=".7"/>
+    <path d="M-205-159 L-143-198 L121-198 L192-158" fill="#0a0e0e" stroke="#201b18" stroke-width="3"/>
+    <path d="M-95-196 L55-196 L70-163 L-109-163 Z" fill="#14100e" opacity=".8"/>
+    <g fill="#090a0a">
+      <circle cx="-164" cy="17" r="43"/><circle cx="161" cy="17" r="43"/>
+      <circle cx="-164" cy="17" r="25" fill="#22272a"/><circle cx="161" cy="17" r="25" fill="#22272a"/>
+      <circle cx="-164" cy="17" r="9" fill="#070808"/><circle cx="161" cy="17" r="9" fill="#070808"/>
+    </g>
+    <path d="M-220 22 H220" stroke="#050606" stroke-width="13"/>
+    <path d="M-241-38 L-269-33 M248-38 L275-34" stroke="#79908c" stroke-width="3" opacity=".24"/>
+  </g>
+      
+  <g transform="translate(855 839) scale(0.74 0.74)">
+    <path d="M-242-158 L238-158 L258-142 L258 4 L-258 4 L-258-142 Z" fill="#0a0e0e"/>
+    <path d="M-238-156 L236-156" stroke="#79908c" stroke-width="4" opacity=".52"/>
+    <path d="M-220-143 L-220-12 M-170-145 L-170-10 M-118-145 L-118-10 M-64-145 L-64-10 M-10-145 L-10-10 M44-145 L44-10 M98-145 L98-10 M152-145 L152-10 M206-145 L206-10" stroke="#29221e" stroke-width="6" opacity=".68"/>
+    <path d="M-238-128 L238-128 M-247-118 L247-118 M-249-49 L249-49" stroke="#3c2a20" stroke-width="3" opacity=".7"/>
+    <path d="M-205-159 L-143-198 L121-198 L192-158" fill="#0a0e0e" stroke="#201b18" stroke-width="3"/>
+    <path d="M-95-196 L55-196 L70-163 L-109-163 Z" fill="#14100e" opacity=".8"/>
+    <g fill="#090a0a">
+      <circle cx="-164" cy="17" r="43"/><circle cx="161" cy="17" r="43"/>
+      <circle cx="-164" cy="17" r="25" fill="#22272a"/><circle cx="161" cy="17" r="25" fill="#22272a"/>
+      <circle cx="-164" cy="17" r="9" fill="#070808"/><circle cx="161" cy="17" r="9" fill="#070808"/>
+    </g>
+    <path d="M-220 22 H220" stroke="#050606" stroke-width="13"/>
+    <path d="M-241-38 L-269-33 M248-38 L275-34" stroke="#79908c" stroke-width="3" opacity=".24"/>
+  </g>
+    </g>
+    <path d="M0 1050 H1080 V1350 H0 Z" fill="#091011"/>
+    <path d="M20 1350 L430 928 M1060 1350 L650 928" stroke="#273536" stroke-width="45"/>
+    <path d="M20 1350 L430 928 M1060 1350 L650 928" stroke="#cbd6d3" stroke-width="3" opacity=".34"/>
+    <path d="M0 1204 C305 1148 687 1160 1080 1228" stroke="#8fb0b0" stroke-width="2" opacity=".2"/>
+    
+  <g transform="translate(718 1089) scale(-1.13 1.13) rotate(8)" fill="#070b0b">
+    <ellipse cx="0" cy="-117" rx="13" ry="16"/>
+    <path d="M-11-104 C-27-96-34-80-35-57 L-25-54 C-21-70-18-78-8-86 L-7-35 L-26 58 L-9 61 L2-4 L7 60 L25 58 L13-31 L11-92 C24-82 29-68 31-53 L42-55 C41-82 30-101 12-109 Z"/>
+    <path d="M-31-83 C-41-69-45-48-43-24 L-33-25 C-34-46-30-60-22-72 Z"/>
+    <path d="M12-90 C33-90 46-85 55-72 L48-63 C38-72 27-76 14-76 Z"/>
+    <path d="M47-73 C55-79 63-77 66-69 C62-64 55-62 49-65 Z"/>
+    <path d="M-8-111 C-4-124 4-124 8-111 C7-108 3-106-1-106 C-4-106-7-108-8-111 Z" opacity=".8"/>
+  </g>
+    <ellipse cx="637" cy="1116" rx="225" ry="160" fill="url(#flash)" opacity=".48"/>
+    <rect width="1080" height="1350" fill="url(#rain)"/>
+    <path d="M0 1240 C240 1192 442 1210 590 1248 C768 1294 938 1284 1080 1257 V1350 H0 Z" fill="#a9bdba" opacity=".12"/>
+    
+  <filter id="grain-72" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="4" seed="72" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#grain-72)" opacity="0.22" style="mix-blend-mode:overlay"/>
+
+    
+  <radialGradient id="vignette" cx="50%" cy="44%" r="74%">
+    <stop offset="42%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.8"/>
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)"/>
+
+  
+</svg>

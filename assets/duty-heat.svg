@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" preserveAspectRatio="xMidYMid slice" >
+  <defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#15191a"/><stop offset="1" stop-color="#070909"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e2a45d" stop-opacity=".9"/><stop offset="1" stop-color="#e2a45d" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="lightpool" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#f5d6a0" stop-opacity=".58"/><stop offset=".5" stop-color="#bc8049" stop-opacity=".14"/><stop offset="1" stop-color="#b26e3e" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="railGlint" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f4d1a0" stop-opacity=".9"/><stop offset="1" stop-color="#5b4a3c" stop-opacity=".05"/>
+  </linearGradient>
+  <linearGradient id="ballast" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1a1a18"/><stop offset="1" stop-color="#070808"/>
+  </linearGradient>
+  <radialGradient id="photo-vignette" cx="50%" cy="46%" r="70%">
+    <stop offset=".38" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".72"/>
+  </radialGradient>
+  
+  <filter id="haze-soft" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="4" seed="8"/>
+    <feColorMatrix values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 .55 0"/>
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
+
+
+    <radialGradient id="sunheat" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff8cf"/><stop offset=".15" stop-color="#ffdf96" stop-opacity=".95"/><stop offset=".5" stop-color="#d98545" stop-opacity=".27"/><stop offset="1" stop-color="#9e4f2c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="heat"><feTurbulence type="fractalNoise" baseFrequency=".01 .08" numOctaves="3" seed="17"/><feDisplacementMap in="SourceGraphic" scale="22"/></filter></defs>
+  
+    <rect width="1080" height="1350" fill="#33251d"/>
+    <rect width="1080" height="760" fill="url(#sunheat)" opacity=".75"/>
+    <ellipse cx="674" cy="488" rx="360" ry="360" fill="url(#sunheat)"/>
+    <g filter="url(#heat)" opacity=".45">
+      <path d="M0 730 C286 684 474 711 642 742 C806 773 964 758 1080 727 V792 H0 Z" fill="#e4a565"/>
+    </g>
+    <g opacity=".95">
+      
+  <g transform="translate(249 826) scale(0.83 0.83)">
+    <path d="M-242-158 L238-158 L258-142 L258 4 L-258 4 L-258-142 Z" fill="#1a1714"/>
+    <path d="M-238-156 L236-156" stroke="#bd824f" stroke-width="4" opacity=".52"/>
+    <path d="M-220-143 L-220-12 M-170-145 L-170-10 M-118-145 L-118-10 M-64-145 L-64-10 M-10-145 L-10-10 M44-145 L44-10 M98-145 L98-10 M152-145 L152-10 M206-145 L206-10" stroke="#29221e" stroke-width="6" opacity=".68"/>
+    <path d="M-238-128 L238-128 M-247-118 L247-118 M-249-49 L249-49" stroke="#3c2a20" stroke-width="3" opacity=".7"/>
+    <path d="M-205-159 L-143-198 L121-198 L192-158" fill="#1a1714" stroke="#201b18" stroke-width="3"/>
+    <path d="M-95-196 L55-196 L70-163 L-109-163 Z" fill="#14100e" opacity=".8"/>
+    <g fill="#090a0a">
+      <circle cx="-164" cy="17" r="43"/><circle cx="161" cy="17" r="43"/>
+      <circle cx="-164" cy="17" r="25" fill="#22272a"/><circle cx="161" cy="17" r="25" fill="#22272a"/>
+      <circle cx="-164" cy="17" r="9" fill="#070808"/><circle cx="161" cy="17" r="9" fill="#070808"/>
+    </g>
+    <path d="M-220 22 H220" stroke="#050606" stroke-width="13"/>
+    <path d="M-241-38 L-269-33 M248-38 L275-34" stroke="#bd824f" stroke-width="3" opacity=".24"/>
+  </g>
+      
+  <g transform="translate(746 834) scale(0.76 0.76)">
+    <path d="M-242-158 L238-158 L258-142 L258 4 L-258 4 L-258-142 Z" fill="#191612"/>
+    <path d="M-238-156 L236-156" stroke="#b87e4c" stroke-width="4" opacity=".52"/>
+    <path d="M-220-143 L-220-12 M-170-145 L-170-10 M-118-145 L-118-10 M-64-145 L-64-10 M-10-145 L-10-10 M44-145 L44-10 M98-145 L98-10 M152-145 L152-10 M206-145 L206-10" stroke="#29221e" stroke-width="6" opacity=".68"/>
+    <path d="M-238-128 L238-128 M-247-118 L247-118 M-249-49 L249-49" stroke="#3c2a20" stroke-width="3" opacity=".7"/>
+    <path d="M-205-159 L-143-198 L121-198 L192-158" fill="#191612" stroke="#201b18" stroke-width="3"/>
+    <path d="M-95-196 L55-196 L70-163 L-109-163 Z" fill="#14100e" opacity=".8"/>
+    <g fill="#090a0a">
+      <circle cx="-164" cy="17" r="43"/><circle cx="161" cy="17" r="43"/>
+      <circle cx="-164" cy="17" r="25" fill="#22272a"/><circle cx="161" cy="17" r="25" fill="#22272a"/>
+      <circle cx="-164" cy="17" r="9" fill="#070808"/><circle cx="161" cy="17" r="9" fill="#070808"/>
+    </g>
+    <path d="M-220 22 H220" stroke="#050606" stroke-width="13"/>
+    <path d="M-241-38 L-269-33 M248-38 L275-34" stroke="#b87e4c" stroke-width="3" opacity=".24"/>
+  </g>
+    </g>
+    <path d="M0 1080 H1080 V1350 H0 Z" fill="#17130f"/>
+    <path d="M18 1350 L420 954 M1062 1350 L660 954" stroke="#1d1b17" stroke-width="44"/>
+    <path d="M18 1350 L420 954 M1062 1350 L660 954" stroke="url(#railGlint)" stroke-width="6" opacity=".5"/>
+    
+  <g transform="translate(758 1112) scale(-1.08 1.08) rotate(6)" fill="#0c0b09">
+    <ellipse cx="0" cy="-117" rx="13" ry="16"/>
+    <path d="M-11-104 C-27-96-34-80-35-57 L-25-54 C-21-70-18-78-8-86 L-7-35 L-26 58 L-9 61 L2-4 L7 60 L25 58 L13-31 L11-92 C24-82 29-68 31-53 L42-55 C41-82 30-101 12-109 Z"/>
+    <path d="M-31-83 C-41-69-45-48-43-24 L-33-25 C-34-46-30-60-22-72 Z"/>
+    <path d="M12-90 C33-90 46-85 55-72 L48-63 C38-72 27-76 14-76 Z"/>
+    <path d="M47-73 C55-79 63-77 66-69 C62-64 55-62 49-65 Z"/>
+    <path d="M-8-111 C-4-124 4-124 8-111 C7-108 3-106-1-106 C-4-106-7-108-8-111 Z" opacity=".8"/>
+  </g>
+    
+  <filter id="grain-71" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="4" seed="71" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#grain-71)" opacity="0.2" style="mix-blend-mode:overlay"/>
+
+    
+  <radialGradient id="vignette" cx="50%" cy="44%" r="74%">
+    <stop offset="42%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.72"/>
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)"/>
+
+  
+</svg>
